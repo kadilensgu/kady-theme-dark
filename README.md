@@ -1,0 +1,1 @@
+"# kady-theme-dark" 

@@ -1,0 +1,734 @@
+{
+    "type": "dark",
+    "colors": {
+        // ========================================
+        // 通用界面颜色
+        // 基础文本、边框、焦点等全局元素的颜色
+        // ========================================
+        "focusBorder": "#1f6feb00", // 聚焦元素的边框颜色（如输入框获得焦点）
+        "foreground": "#e6edf3", // 默认前景色（主要文本颜色）
+        "descriptionForeground": "#7d8590", // 描述性文字颜色（辅助说明文本）
+        "errorForeground": "#f85149", // 全局错误提示文字颜色
+        // ========================================
+        // 文本与链接样式
+        // 控制文档内文本、链接、引用块等排版相关颜色
+        // ========================================
+        "textLink.foreground": "#2f81f7", // 链接文本颜色
+        "textLink.activeForeground": "#2f81f7", // 激活状态下的链接颜色
+        "textBlockQuote.background": "#010409", // 引用块背景色
+        "textBlockQuote.border": "#30363d", // 引用块左侧边框颜色
+        "textCodeBlock.background": "#6e768166", // 代码块背景色（带透明度）
+        "textPreformat.foreground": "#7d8590", // 预格式化文本颜色（如 `<pre>` 内容）
+        "textPreformat.background": "#6e768166", // 预格式化文本背景色
+        "textSeparator.foreground": "#21262d", // 分隔线颜色（如水平分割线）
+        // ========================================
+        // 图标与标签
+        // 界面中图标的颜色及快捷键标签等
+        // ========================================
+        "icon.foreground": "#7d8590", // 图标默认颜色（如侧边栏图标）
+        "keybindingLabel.foreground": "#e6edf3", // 快捷键标签文字颜色（如命令面板中的按键提示）
+        // ========================================
+        // 按钮与交互控件
+        // 按钮、下拉框、输入框等 UI 组件的颜色
+        // ========================================
+        "button.background": "#238636", // 主按钮背景色
+        "button.foreground": "#ffffff", // 主按钮文字颜色
+        "button.hoverBackground": "#2ea043", // 主按钮悬停时背景色
+        "button.secondaryBackground": "#282e33", // 次要按钮背景色
+        "button.secondaryForeground": "#c9d1d9", // 次要按钮文字颜色
+        "button.secondaryHoverBackground": "#30363d", // 次要按钮悬停背景色
+        "checkbox.background": "#161b22", // 复选框背景色
+        "checkbox.border": "#30363d", // 复选框边框颜色
+        "dropdown.background": "#161b22", // 下拉菜单背景色
+        "dropdown.border": "#30363d", // 下拉菜单边框颜色
+        "dropdown.foreground": "#e6edf3", // 下拉菜单文字颜色
+        "dropdown.listBackground": "#161b22", // 下拉列表背景色
+        "input.background": "#0d1117", // 输入框背景色
+        "input.border": "#30363d", // 输入框边框颜色
+        "input.foreground": "#e6edf3", // 输入框文字颜色
+        "input.placeholderForeground": "#6e7681", // 输入框占位符文字颜色
+        // ========================================
+        // 标记与进度条
+        // badge、进度条等视觉提示元素
+        // ========================================
+        "badge.foreground": "#ffffff", // Badge 文字颜色（如未读数标记）
+        "badge.background": "#1f6feb", // Badge 背景色
+        "progressBar.background": "#1f6feb", // 进度条加载动画颜色（如顶部加载条）
+        // ========================================
+        // 窗口标题栏
+        // 顶部窗口标题区域颜色
+        // ========================================
+        "titleBar.activeForeground": "#7d8590", // 活动窗口标题文字颜色
+        "titleBar.activeBackground": "#0d1117", // 活动窗口标题背景色
+        "titleBar.inactiveForeground": "#7d8590", // 非活动窗口标题文字颜色（稍暗）
+        "titleBar.inactiveBackground": "#010409", // 非活动窗口标题背景色
+        "titleBar.border": "#30363d", // 标题栏底部边框颜色
+        // ========================================
+        // 活动栏（Activity Bar）
+        // 左侧图标栏（文件、搜索、Git 等）
+        // ========================================
+        "activityBar.foreground": "#e6edf3", // 活动栏图标激活时颜色
+        "activityBar.inactiveForeground": "#7d8590", // 活动栏非激活图标的颜色
+        "activityBar.background": "#0d1117", // 活动栏背景色
+        "activityBarBadge.foreground": "#ffffff", // 活动栏 badge 文字颜色
+        "activityBarBadge.background": "#1f6feb", // 活动栏 badge 背景色
+        "activityBar.activeBorder": "#f78166", // 当前选中项底部高亮条颜色
+        "activityBar.border": "#30363d", // 活动栏右侧分隔边框
+        // ========================================
+        // 侧边栏（Side Bar）
+        // 文件资源管理器、大纲等面板
+        // ========================================
+        "sideBar.foreground": "#e6edf3", // 侧边栏文字颜色
+        "sideBar.background": "#010409", // 侧边栏背景色
+        "sideBar.border": "#30363d", // 侧边栏右侧边框颜色
+        "sideBarTitle.foreground": "#e6edf3", // 侧边栏标题文字颜色
+        "sideBarSectionHeader.foreground": "#e6edf3", // 分组标题文字颜色（如“展开”、“Git”）
+        "sideBarSectionHeader.background": "#010409", // 分组标题背景色
+        "sideBarSectionHeader.border": "#30363d", // 分组标题下边框颜色
+        // ========================================
+        // 列表与树状结构
+        // 文件列表、符号列表等可交互列表项
+        // ========================================
+        "list.hoverForeground": "#e6edf3", // 鼠标悬停时列表项文字颜色
+        "list.inactiveSelectionForeground": "#e6edf3", // 非聚焦状态下选中项文字颜色
+        "list.activeSelectionForeground": "#e6edf3", // 活跃状态下选中项文字颜色
+        "list.hoverBackground": "#6e76811a", // 悬停背景色（轻微透明）
+        "list.inactiveSelectionBackground": "#6e768166", // 非聚焦选中背景
+        "list.activeSelectionBackground": "#6e768166", // 活跃选中背景
+        "list.focusBackground": "#388bfd26", // 聚焦但未选中项背景
+        "list.inactiveFocusBackground": "#388bfd26", // 非活跃窗口中聚焦项背景
+        "list.highlightForeground": "#2f81f7", // 高亮匹配文字颜色（如搜索定位）
+        "tree.indentGuidesStroke": "#21262d", // 树形缩进引导线颜色
+        // ========================================
+        // 通知中心
+        // 提示弹窗、错误通知等
+        // ========================================
+        "notificationCenterHeader.foreground": "#7d8590", // 通知中心头部文字
+        "notificationCenterHeader.background": "#161b22", // 通知中心头部背景
+        "notifications.foreground": "#e6edf3", // 通知内容文字颜色
+        "notifications.background": "#161b22", // 通知背景色
+        "notifications.border": "#30363d", // 通知边框颜色
+        "notificationsErrorIcon.foreground": "#f85149", // 错误图标颜色
+        "notificationsWarningIcon.foreground": "#d29922", // 警告图标颜色
+        "notificationsInfoIcon.foreground": "#2f81f7", // 信息图标颜色
+        // ========================================
+        // 快速选择与输入面板
+        // 命令面板、快速打开等浮层
+        // ========================================
+        "pickerGroup.border": "#30363d", // 选择器分组边框（如命令分类线）
+        "pickerGroup.foreground": "#7d8590", // 选择器分组标题文字
+        "quickInput.background": "#161b22", // 快速输入背景
+        "quickInput.foreground": "#e6edf3", // 快速输入文字颜色
+        // ========================================
+        // 状态栏（Status Bar）
+        // 底部状态栏颜色
+        // ========================================
+        "statusBar.foreground": "#7d8590", // 状态栏文字颜色
+        "statusBar.background": "#0d1117", // 状态栏背景色
+        "statusBar.border": "#30363d", // 状态栏顶部边框
+        "statusBar.focusBorder": "#1f6feb80", // 状态栏聚焦边框（半透明蓝色）
+        "statusBar.noFolderBackground": "#0d1117", // 无项目打开时背景色
+        "statusBar.debuggingForeground": "#ffffff", // 调试模式下文字颜色
+        "statusBar.debuggingBackground": "#00ffff22", // 调试模式背景色（红色）
+        "statusBarItem.prominentBackground": "#6e768166", // 显著按钮背景（如警告提示）
+        "statusBarItem.remoteForeground": "#e6edf3", // 远程连接状态文字
+        "statusBarItem.remoteBackground": "#30363d", // 远程连接背景
+        "statusBarItem.hoverBackground": "#e6edf314", // 悬停时背景（轻微透明）
+        "statusBarItem.activeBackground": "#e6edf31f", // 激活项背景
+        "statusBarItem.focusBorder": "#1f6feb", // 状态栏项目聚焦边框
+        // ========================================
+        // 编辑器标签页（Tabs）
+        // 多文件标签页外观
+        // ========================================
+        "editorGroupHeader.tabsBackground": "#010409", // 标签页区域整体背景
+        "editorGroupHeader.tabsBorder": "#30363d", // 标签页区域底部边框
+        "editorGroup.border": "#30363d", // 编辑器组之间分隔线
+        "tab.activeForeground": "#e6edf3", // 当前激活标签文字
+        "tab.inactiveForeground": "#7d8590", // 非激活标签文字
+        "tab.inactiveBackground": "#010409", // 非激活标签背景
+        "tab.activeBackground": "#0d1117", // 激活标签背景
+        "tab.hoverBackground": "#0d1117", // 标签悬停背景
+        "tab.unfocusedHoverBackground": "#6e76811a", // 未聚焦窗口中悬停效果
+        "tab.border": "#30363d", // 标签间分隔线
+        "tab.unfocusedActiveBorderTop": "#30363d", // 未聚焦时激活标签顶部边框
+        "tab.activeBorder": "#0d1117", // 激活标签底部边框（隐藏）
+        "tab.unfocusedActiveBorder": "#0d1117", // 未聚焦时激活标签边框
+        "tab.activeBorderTop": "#f78166", // 激活标签顶部高亮条（主色调）
+        // ========================================
+        // 面包屑导航（Breadcrumb）
+        // 文件路径导航栏
+        // ========================================
+        "breadcrumb.foreground": "#7d8590", // 非激活路径文字颜色
+        "breadcrumb.focusForeground": "#56d364", // 聚焦或当前路径文字
+        "breadcrumb.activeSelectionForeground": "#7d8590", // 活动选择项颜色
+        "breadcrumbPicker.background": "#161b22", // 下拉选择背景（点击面包屑展开时）
+        // ========================================
+        // 编辑器核心样式
+        // 代码编辑区域的主要视觉定义
+        // ========================================
+        "editor.foreground": "#e6edf3", // 代码默认文字颜色
+        "editor.background": "#0d1117", // 编辑器背景色
+        "editorWidget.background": "#161b22", // 编辑器浮层背景（如补全框、hover提示）
+        "editor.foldBackground": "#6e76811a", // 折叠区域背景（轻微高亮）
+        "editor.lineHighlightBackground": "#6e768100", // 当前行高亮背景
+        "editor.lineHighlightBorder": "#6e768100", // 当前行高亮背景
+        "editorLineNumber.foreground": "#6e7681", // 行号颜色（非活动行）
+        "editorLineNumber.activeForeground": "#e6edf3", // 当前行行号颜色
+        "editorIndentGuide.background1": "#e6edf31f", // 缩进参考线颜色（未聚焦）
+        "editorIndentGuide.activeBackground1": "#33894299", // 聚焦时缩进线颜色
+        "editorWhitespace.foreground": "#484f58", // 空白字符显示颜色（空格、制表符）
+        "editorCursor.foreground": "#2f81f7", // 光标颜色
+        // ========================================
+        // 编辑器查找与高亮
+        // 搜索匹配、语义高亮等功能颜色
+        // ========================================
+        "editor.findMatchBackground": "#9e6a03", // 当前查找匹配项背景
+        "editor.findMatchHighlightBackground": "#f2cc6080", // 其他匹配项背景（半透明）
+        "editor.linkedEditingBackground": "#2f81f712", // 联动编辑背景（如 HTML 标签同步重命名）
+        "editor.selectionHighlightBackground": "#3fb95000", // 选中词的其他出现位置背景
+        "editor.wordHighlightBackground": "#3fb95033", // 当前词语高亮背景（非选中）
+        "editor.wordHighlightBorder": "#6e768100", // 单词高亮边框
+        "editor.wordHighlightStrongBackground": "#6e76814d", // 强语义高亮背景（如定义处）
+        "editor.wordHighlightStrongBorder": "#6e768100", // 强高亮边框
+        "editorBracketMatch.background": "#3fb95055", // 匹配括号范围背景
+        "editorBracketMatch.border": "#3fb95000", // 匹配括号边框
+        // ========================================
+        // 内联提示（Inlay Hints）
+        // 参数提示、类型标注等嵌入信息
+        // ========================================
+        "editorInlayHint.background": "#8b949e33", // 内联提示背景
+        "editorInlayHint.foreground": "#7d8590", // 内联提示文字
+        "editorInlayHint.typeBackground": "#8b949e33", // 类型提示背景
+        "editorInlayHint.typeForeground": "#7d8590", // 类型提示文字
+        // ========================================
+        // 编辑器装饰与差异对比
+        // Git 修改标记、diff 对比等
+        // ========================================
+        "editorGutter.modifiedBackground": "#bb800966", // 行改动标记（修改）
+        "editorGutter.addedBackground": "#2ea04366", // 行改动标记（新增）
+        "editorGutter.deletedBackground": "#f8514966", // 行改动标记（删除）
+        "diffEditor.insertedLineBackground": "#23863626", // diff 中插入行背景
+        "diffEditor.insertedTextBackground": "#3fb9504d", // diff 中插入文本高亮
+        "diffEditor.removedLineBackground": "#da363326", // diff 中删除行背景
+        "diffEditor.removedTextBackground": "#ff7b724d", // diff 中删除文本高亮
+        // ========================================
+        // 滚动条与概览轴
+        // 滚动条样式及 minimap 相关
+        // ========================================
+        "scrollbar.shadow": "#484f5833", // 滚动条阴影（边缘模糊）
+        "scrollbarSlider.background": "#8b949e33", // 滚动滑块背景（透明）
+        "scrollbarSlider.hoverBackground": "#8b949e3d", // 滚动滑块悬停
+        "scrollbarSlider.activeBackground": "#8b949e47", // 滚动滑块按下状态
+        "editorOverviewRuler.border": "#010409", // 概览轴外边框
+        "minimapSlider.background": "#8b949e33", // Minimap 滑块背景
+        "minimapSlider.hoverBackground": "#8b949e3d", // Minimap 滑块悬停
+        "minimapSlider.activeBackground": "#8b949e47", // Minimap 滑块激活
+        // ========================================
+        // 面板（Panel）
+        // 底部终端、输出、调试等面板
+        // ========================================
+        "panel.background": "#010409", // 面板整体背景
+        "panel.border": "#30363d", // 面板顶部边框
+        "panelTitle.activeBorder": "#f78166", // 激活面板标题底部高亮条
+        "panelTitle.activeForeground": "#e6edf3", // 激活面板标题文字
+        "panelTitle.inactiveForeground": "#7d8590", // 非激活面板标题文字
+        "panelInput.border": "#30363d", // 面板内输入框边框
+        // ========================================
+        // 调试相关图标与控制台
+        // Debug 图标、控制台输出颜色
+        // ========================================
+        "debugIcon.breakpointForeground": "#f85149", // 断点图标颜色
+        "debugConsole.infoForeground": "#8b949e", // 控制台信息输出文字
+        "debugConsole.warningForeground": "#d29922", // 控制台警告文字
+        "debugConsole.errorForeground": "#ffa198", // 控制台错误文字
+        "debugConsole.sourceForeground": "#e3b341", // 源码路径提示文字
+        "debugConsoleInputIcon.foreground": "#bc8cff", // 输入命令图标颜色
+        "debugTokenExpression.name": "#79c0ff", // 调试表达式名称颜色
+        "debugTokenExpression.value": "#a5d6ff", // 调试值颜色
+        "debugTokenExpression.string": "#a5d6ff", // 字符串值颜色
+        "debugTokenExpression.boolean": "#56d364", // 布尔值颜色
+        "debugTokenExpression.number": "#56d364", // 数字值颜色
+        "debugTokenExpression.error": "#ffa198", // 错误表达式颜色
+        // ========================================
+        // 符号图标颜色（Symbol Icons）
+        // 各类代码符号在大纲或自动补全中的图标颜色
+        // ========================================
+        "symbolIcon.arrayForeground": "#f0883e", // 数组类型图标颜色
+        "symbolIcon.booleanForeground": "#58a6ff", // 布尔类型
+        "symbolIcon.classForeground": "#f0883e", // 类
+        "symbolIcon.colorForeground": "#79c0ff", // 颜色值
+        "symbolIcon.constructorForeground": "#d2a8ff", // 构造函数
+        "symbolIcon.enumeratorForeground": "#f0883e", // 枚举
+        "symbolIcon.enumeratorMemberForeground": "#58a6ff", // 枚举成员
+        "symbolIcon.eventForeground": "#6e7681", // 事件
+        "symbolIcon.fieldForeground": "#f0883e", // 字段
+        "symbolIcon.fileForeground": "#d29922", // 文件
+        "symbolIcon.folderForeground": "#d29922", // 文件夹
+        "symbolIcon.functionForeground": "#bc8cff", // 函数
+        "symbolIcon.interfaceForeground": "#f0883e", // 接口
+        "symbolIcon.keyForeground": "#58a6ff", // 键（Key）
+        "symbolIcon.keywordForeground": "#ff7b72", // 关键字
+        "symbolIcon.methodForeground": "#bc8cff", // 方法
+        "symbolIcon.moduleForeground": "#ff7b72", // 模块
+        "symbolIcon.namespaceForeground": "#ff7b72", // 命名空间
+        "symbolIcon.nullForeground": "#58a6ff", // null 值
+        "symbolIcon.numberForeground": "#3fb950", // 数字
+        "symbolIcon.objectForeground": "#f0883e", // 对象
+        "symbolIcon.operatorForeground": "#79c0ff", // 操作符
+        "symbolIcon.packageForeground": "#f0883e", // 包
+        "symbolIcon.propertyForeground": "#f0883e", // 属性
+        "symbolIcon.referenceForeground": "#58a6ff", // 引用
+        "symbolIcon.snippetForeground": "#58a6ff", // 代码片段
+        "symbolIcon.stringForeground": "#79c0ff", // 字符串
+        "symbolIcon.structForeground": "#f0883e", // 结构体
+        "symbolIcon.textForeground": "#79c0ff", // 纯文本
+        "symbolIcon.typeParameterForeground": "#79c0ff", // 类型参数（泛型）
+        "symbolIcon.unitForeground": "#58a6ff", // 单位（如 px, em）
+        "symbolIcon.variableForeground": "#f0883e", // 变量
+        "symbolIcon.constantForeground": "#aff5b4", // 常量（支持渐变数组，用于主题动画）
+        // ========================================
+        // 终端颜色（Terminal）
+        // 内建终端的 ANSI 与亮色配色
+        // ========================================
+        "terminal.foreground": "#e6edf3", // 终端默认文字颜色
+        "terminal.ansiBlack": "#484f58", // 黑色
+        "terminal.ansiRed": "#ff7b72", // 红色
+        "terminal.ansiGreen": "#3fb950", // 绿色
+        "terminal.ansiYellow": "#d29922", // 黄色
+        "terminal.ansiBlue": "#58a6ff", // 蓝色
+        "terminal.ansiMagenta": "#bc8cff", // 品红
+        "terminal.ansiCyan": "#39c5cf", // 青色
+        "terminal.ansiWhite": "#b1bac4", // 白色
+        "terminal.ansiBrightBlack": "#6e7681", // 亮黑（灰）
+        "terminal.ansiBrightRed": "#ffa198", // 亮红
+        "terminal.ansiBrightGreen": "#56d364", // 亮绿
+        "terminal.ansiBrightYellow": "#e3b341", // 亮黄
+        "terminal.ansiBrightBlue": "#79c0ff", // 亮蓝
+        "terminal.ansiBrightMagenta": "#d2a8ff", // 亮品红
+        "terminal.ansiBrightCyan": "#56d4dd", // 亮青
+        "terminal.ansiBrightWhite": "#ffffff", // 亮白
+        // ========================================
+        // 括号配对高亮
+        // 增强括号匹配视觉提示
+        // ========================================
+        "editorBracketHighlight.foreground1": "#79c0ff", // 第一层括号颜色
+        "editorBracketHighlight.foreground2": "#56d364", // 第二层
+        "editorBracketHighlight.foreground3": "#e3b341", // 第三层
+        "editorBracketHighlight.foreground4": "#ffa198", // 第四层
+        "editorBracketHighlight.foreground5": "#ff9bce", // 第五层
+        "editorBracketHighlight.foreground6": "#d2a8ff", // 第六层
+        "editorBracketHighlight.unexpectedBracket.foreground": "#7d8590", // 错配括号颜色
+        // ========================================
+        // Git 版本控制装饰
+        // 文件状态颜色标识
+        // ========================================
+        "gitDecoration.addedResourceForeground": "#3fb950", // 新增文件
+        "gitDecoration.modifiedResourceForeground": "#d29922", // 修改文件
+        "gitDecoration.deletedResourceForeground": "#f85149", // 删除文件
+        "gitDecoration.untrackedResourceForeground": "#3fb950", // 未跟踪文件
+        "gitDecoration.ignoredResourceForeground": "#6e7681", // 忽略文件
+        "gitDecoration.conflictingResourceForeground": "#db6d28", // 冲突文件
+        "gitDecoration.submoduleResourceForeground": "#7d8590", // 子模块
+        // ========================================
+        // 调试工具栏与其他高亮
+        // ========================================
+        "debugToolBar.background": "#161b22", // 调试工具栏背景
+        "editor.stackFrameHighlightBackground": "#bb800966", // 栈帧高亮背景（调试时）
+        "editor.focusedStackFrameHighlightBackground": "#2ea04366", // 聚焦栈帧高亮
+        "peekViewEditor.matchHighlightBackground": "#bb800966", // Peek 查看中匹配高亮
+        "peekViewResult.matchHighlightBackground": "#bb800966", // Peek 结果中匹配高亮
+        "peekViewEditor.background": "#6e76811a", // Peek 编辑器背景
+        "peekViewResult.background": "#0d1117", // Peek 结果面板背景
+        // ========================================
+        // 设置页面与欢迎页
+        // 用户设置界面与启动页
+        // ========================================
+        "settings.headerForeground": "#e6edf3", // 设置标题文字
+        "settings.modifiedItemIndicator": "#bb800966", // 已修改设置项指示器
+    },
+    "tokenColors": [
+        {
+            "settings": {
+                "foreground": "#F8F8F2"
+            }
+        },
+        {
+            "scope": [
+                "meta.embedded",
+                "source.groovy.embedded",
+                "string meta.image.inline.markdown",
+                "variable.legacy.builtin.python"
+            ],
+            "settings": {
+                "foreground": "#F8F8F2"
+            }
+        },
+        {
+            "name": "Comment",
+            "scope": "comment",
+            "settings": {
+                "foreground": "#88846f"
+            }
+        },
+        {
+            "name": "String",
+            "scope": "string",
+            "settings": {
+                "foreground": "#E6DB74"
+            }
+        },
+        {
+            "name": "Template Definition",
+            "scope": [
+                "punctuation.definition.template-expression",
+                "punctuation.section.embedded"
+            ],
+            "settings": {
+                "foreground": "#F92672"
+            }
+        },
+        {
+            "name": "Reset JavaScript string interpolation expression",
+            "scope": [
+                "meta.template.expression"
+            ],
+            "settings": {
+                "foreground": "#F8F8F2"
+            }
+        },
+        {
+            "name": "Number",
+            "scope": "constant.numeric",
+            "settings": {
+                "foreground": "#AE81FF"
+            }
+        },
+        {
+            "name": "Built-in constant",
+            "scope": "constant.language",
+            "settings": {
+                "foreground": "#AE81FF"
+            }
+        },
+        {
+            "name": "User-defined constant",
+            "scope": "constant.character, constant.other",
+            "settings": {
+                "foreground": "#AE81FF"
+            }
+        },
+        {
+            "name": "Variable",
+            "scope": "variable",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#F8F8F2"
+            }
+        },
+        {
+            "name": "Keyword",
+            "scope": "keyword",
+            "settings": {
+                "foreground": "#F92672"
+            }
+        },
+        {
+            "name": "Storage",
+            "scope": "storage",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#F92672"
+            }
+        },
+        {
+            "name": "Storage type",
+            "scope": "storage.type",
+            "settings": {
+                "fontStyle": "italic",
+                "foreground": "#66D9EF"
+            }
+        },
+        {
+            "name": "Class name",
+            "scope": "entity.name.type, entity.name.class, entity.name.namespace, entity.name.scope-resolution",
+            "settings": {
+                "fontStyle": "underline",
+                "foreground": "#A6E22E"
+            }
+        },
+        {
+            "name": "Inherited class",
+            "scope": "entity.other.inherited-class",
+            "settings": {
+                "fontStyle": "italic underline",
+                "foreground": "#A6E22E"
+            }
+        },
+        {
+            "name": "Function name",
+            "scope": "entity.name.function",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#A6E22E"
+            }
+        },
+        {
+            "name": "Function argument",
+            "scope": "variable.parameter",
+            "settings": {
+                "fontStyle": "italic",
+                "foreground": "#FD971F"
+            }
+        },
+        {
+            "name": "Tag name",
+            "scope": "entity.name.tag",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#F92672"
+            }
+        },
+        {
+            "name": "Tag attribute",
+            "scope": "entity.other.attribute-name",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#A6E22E"
+            }
+        },
+        {
+            "name": "Library function",
+            "scope": "support.function",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#66D9EF"
+            }
+        },
+        {
+            "name": "Library constant",
+            "scope": "support.constant",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#66D9EF"
+            }
+        },
+        {
+            "name": "Library class/type",
+            "scope": "support.type, support.class",
+            "settings": {
+                "fontStyle": "italic",
+                "foreground": "#66D9EF"
+            }
+        },
+        {
+            "name": "Library variable",
+            "scope": "support.other.variable",
+            "settings": {
+                "fontStyle": ""
+            }
+        },
+        {
+            "name": "Invalid",
+            "scope": "invalid",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#F44747"
+            }
+        },
+        {
+            "name": "Invalid deprecated",
+            "scope": "invalid.deprecated",
+            "settings": {
+                "foreground": "#F44747"
+            }
+        },
+        {
+            "name": "JSON String",
+            "scope": "meta.structure.dictionary.json string.quoted.double.json",
+            "settings": {
+                "foreground": "#CFCFC2"
+            }
+        },
+        {
+            "name": "diff.header",
+            "scope": "meta.diff, meta.diff.header",
+            "settings": {
+                "foreground": "#75715E"
+            }
+        },
+        {
+            "name": "diff.deleted",
+            "scope": "markup.deleted",
+            "settings": {
+                "foreground": "#F92672"
+            }
+        },
+        {
+            "name": "diff.inserted",
+            "scope": "markup.inserted",
+            "settings": {
+                "foreground": "#A6E22E"
+            }
+        },
+        {
+            "name": "diff.changed",
+            "scope": "markup.changed",
+            "settings": {
+                "foreground": "#E6DB74"
+            }
+        },
+        {
+            "scope": "constant.numeric.line-number.find-in-files - match",
+            "settings": {
+                "foreground": "#AE81FFA0"
+            }
+        },
+        {
+            "scope": "entity.name.filename.find-in-files",
+            "settings": {
+                "foreground": "#E6DB74"
+            }
+        },
+        {
+            "name": "Markup Quote",
+            "scope": "markup.quote",
+            "settings": {
+                "foreground": "#F92672"
+            }
+        },
+        {
+            "name": "Markup Lists",
+            "scope": "markup.list",
+            "settings": {
+                "foreground": "#E6DB74"
+            }
+        },
+        {
+            "name": "Markup Styling",
+            "scope": "markup.bold, markup.italic",
+            "settings": {
+                "foreground": "#66D9EF"
+            }
+        },
+        {
+            "name": "Markup Inline",
+            "scope": "markup.inline.raw",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#FD971F"
+            }
+        },
+        {
+            "name": "Markup Headings",
+            "scope": "markup.heading",
+            "settings": {
+                "foreground": "#A6E22E"
+            }
+        },
+        {
+            "name": "Markup Setext Header",
+            "scope": "markup.heading.setext",
+            "settings": {
+                "foreground": "#A6E22E",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Markup Headings",
+            "scope": "markup.heading.markdown",
+            "settings": {
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Markdown Quote",
+            "scope": "markup.quote.markdown",
+            "settings": {
+                "fontStyle": "italic",
+                "foreground": "#75715E"
+            }
+        },
+        {
+            "name": "Markdown Bold",
+            "scope": "markup.bold.markdown",
+            "settings": {
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Markdown Link Title/Description",
+            "scope": "string.other.link.title.markdown,string.other.link.description.markdown",
+            "settings": {
+                "foreground": "#AE81FF"
+            }
+        },
+        {
+            "name": "Markdown Underline Link/Image",
+            "scope": "markup.underline.link.markdown,markup.underline.link.image.markdown",
+            "settings": {
+                "foreground": "#E6DB74"
+            }
+        },
+        {
+            "name": "Markdown Emphasis",
+            "scope": "markup.italic.markdown",
+            "settings": {
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "scope": "markup.strikethrough",
+            "settings": {
+                "fontStyle": "strikethrough"
+            }
+        },
+        {
+            "name": "Markdown Punctuation Definition Link",
+            "scope": "markup.list.unnumbered.markdown, markup.list.numbered.markdown",
+            "settings": {
+                "foreground": "#f8f8f2"
+            }
+        },
+        {
+            "name": "Markdown List Punctuation",
+            "scope": [
+                "punctuation.definition.list.begin.markdown"
+            ],
+            "settings": {
+                "foreground": "#A6E22E"
+            }
+        },
+        {
+            "scope": "token.info-token",
+            "settings": {
+                "foreground": "#6796e6"
+            }
+        },
+        {
+            "scope": "token.warn-token",
+            "settings": {
+                "foreground": "#cd9731"
+            }
+        },
+        {
+            "scope": "token.error-token",
+            "settings": {
+                "foreground": "#f44747"
+            }
+        },
+        {
+            "scope": "token.debug-token",
+            "settings": {
+                "foreground": "#b267e6"
+            }
+        },
+        {
+            "name": "this.self",
+            "scope": "variable.language",
+            "settings": {
+                "foreground": "#FD971F"
+            }
+        }
+    ],
+    "semanticHighlighting": true
+}
