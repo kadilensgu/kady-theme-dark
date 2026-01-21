@@ -31,9 +31,9 @@
         // 按钮与交互控件
         // 按钮、下拉框、输入框等 UI 组件的颜色
         // ========================================
-        "button.background": "#238636", // 主按钮背景色
-        "button.foreground": "#ffffff", // 主按钮文字颜色
-        "button.hoverBackground": "#2ea043", // 主按钮悬停时背景色
+        "button.background": "#3a758355", // 主按钮背景色
+        "button.foreground": "#bababa", // 主按钮文字颜色
+        "button.hoverBackground": "#3a7583", // 主按钮悬停时背景色
         "button.secondaryBackground": "#282e33", // 次要按钮背景色
         "button.secondaryForeground": "#c9d1d9", // 次要按钮文字颜色
         "button.secondaryHoverBackground": "#30363d", // 次要按钮悬停背景色
@@ -229,7 +229,7 @@
         // ========================================
         "panel.background": "#010409", // 面板整体背景
         "panel.border": "#30363d", // 面板顶部边框
-        "panelTitle.activeBorder": "#238636", // 激活面板标题底部高亮条
+        "panelTitle.activeBorder": "#237786", // 激活面板标题底部高亮条
         "panelTitle.activeForeground": "#e6edf3", // 激活面板标题文字
         "panelTitle.inactiveForeground": "#7d8590", // 非激活面板标题文字
         "panelInput.border": "#30363d", // 面板内输入框边框
