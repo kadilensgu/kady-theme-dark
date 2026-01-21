@@ -72,7 +72,7 @@
         "activityBar.background": "#0d1117", // 活动栏背景色
         "activityBarBadge.foreground": "#ffffff", // 活动栏 badge 文字颜色
         "activityBarBadge.background": "#1f6feb", // 活动栏 badge 背景色
-        "activityBar.activeBorder": "#f78166", // 当前选中项底部高亮条颜色
+        "activityBar.activeBorder": "#238636", // 当前选中项底部高亮条颜色
         "activityBar.border": "#30363d", // 活动栏右侧分隔边框
         // ========================================
         // 侧边栏（Side Bar）
@@ -153,7 +153,7 @@
         "tab.unfocusedActiveBorderTop": "#30363d", // 未聚焦时激活标签顶部边框
         "tab.activeBorder": "#0d1117", // 激活标签底部边框（隐藏）
         "tab.unfocusedActiveBorder": "#0d1117", // 未聚焦时激活标签边框
-        "tab.activeBorderTop": "#f78166", // 激活标签顶部高亮条（主色调）
+        "tab.activeBorderTop": "#238636", // 激活标签顶部高亮条（主色调）
         // ========================================
         // 面包屑导航（Breadcrumb）
         // 文件路径导航栏
@@ -185,7 +185,7 @@
         "editor.findMatchBackground": "#9e6a03", // 当前查找匹配项背景
         "editor.findMatchHighlightBackground": "#f2cc6080", // 其他匹配项背景（半透明）
         "editor.linkedEditingBackground": "#2f81f712", // 联动编辑背景（如 HTML 标签同步重命名）
-        "editor.selectionHighlightBackground": "#3fb95000", // 选中词的其他出现位置背景
+        "editor.selectionHighlightBackground": "#3fb95033", // 选中词的其他出现位置背景
         "editor.wordHighlightBackground": "#3fb95033", // 当前词语高亮背景（非选中）
         "editor.wordHighlightBorder": "#6e768100", // 单词高亮边框
         "editor.wordHighlightStrongBackground": "#6e76814d", // 强语义高亮背景（如定义处）
@@ -229,7 +229,7 @@
         // ========================================
         "panel.background": "#010409", // 面板整体背景
         "panel.border": "#30363d", // 面板顶部边框
-        "panelTitle.activeBorder": "#f78166", // 激活面板标题底部高亮条
+        "panelTitle.activeBorder": "#238636", // 激活面板标题底部高亮条
         "panelTitle.activeForeground": "#e6edf3", // 激活面板标题文字
         "panelTitle.inactiveForeground": "#7d8590", // 非激活面板标题文字
         "panelInput.border": "#30363d", // 面板内输入框边框
