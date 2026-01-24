@@ -1,9 +1,9 @@
 {
-	"name": "theme-kady",
-	"displayName": "%displayName%",
-	"description": "%description%",
-	"version": "1.0.0",
-	"publisher": "vscode",
+	"name": "kady-theme-dark",
+	"displayName": "Kady Theme Dark",
+	"description": "Kady theme for kadilensgu@163.com",
+	"version": "0.0.1",
+	"publisher": "Kady",
 	"license": "MIT",
 	"engines": {
 		"vscode": "*"
@@ -14,8 +14,7 @@
 	"contributes": {
 		"themes": [
 			{
-				"id": "kady-theme-dark",
-				"label": "%themeLabel%",
+				"label": "Kady Theme Dark",
 				"uiTheme": "vs-dark",
 				"path": "./themes/kady-color-theme.json"
 			}
