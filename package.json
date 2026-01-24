@@ -3,7 +3,8 @@
 	"displayName": "Kady Theme Dark",
 	"description": "Kady theme dark mode for VS Code",
 	"version": "0.0.1",
-	"publisher": "Kady",
+	"publisher": "Kady-themes",
+	"icon": "icon.png",
 	"license": "MIT",
 	"engines": {
 		"vscode": "*"
