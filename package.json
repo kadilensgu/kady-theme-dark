@@ -1,7 +1,7 @@
 {
 	"name": "kady-theme-dark",
 	"displayName": "Kady Theme Dark",
-	"description": "Kady theme for kadilensgu@163.com",
+	"description": "Kady theme dark mode for VS Code",
 	"version": "0.0.1",
 	"publisher": "Kady",
 	"license": "MIT",
