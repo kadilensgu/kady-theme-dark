@@ -182,15 +182,14 @@
         // 编辑器查找与高亮
         // 搜索匹配、语义高亮等功能颜色
         // ========================================
-        "editor.findMatchBackground": "#2ee88a66", // 当前查找匹配项背景（更亮的薄荷绿，第一眼就能抓住）
-        "editor.findMatchHighlightBackground": "#2ee88a33", // 其他匹配项背景（同色系，更轻）
+        "editor.findMatchBackground": "#1d96ce88", // 当前查找匹配项背景（更亮的薄荷绿，第一眼就能抓住）
+        "editor.findMatchHighlightBackground": "#1d96ce33", // 其他匹配项背景（同色系，更轻）
         "editor.linkedEditingBackground": "#4cc2ff33", // 联动编辑背景（更清澈的天空蓝）
-        "editor.selectionHighlightBackground": "#ffffff40", // 选中词的其他出现位置背景（柔光白，更干净）
-        "editor.wordHighlightBackground": "#ffffff2b", // 当前词语高亮背景（轻柔提亮，不干扰阅读）
+        "editor.selectionHighlightBackground": "#c06c6c66", // 选中词的其他出现位置背景（柔光白，更干净）"editor.wordHighlightBackground": "#ffffff11", // 当前词语高亮背景（轻柔提亮，不干扰阅读）
         "editor.wordHighlightBorder": "#00000000", // 单词高亮边框（无边框更高级）
         "editor.wordHighlightStrongBackground": "#ff9f4366", // 强语义高亮背景（蜜橙色，语义感更强）
         "editor.wordHighlightStrongBorder": "#00000000", // 强高亮边框
-        "editorBracketMatch.background": "#2ee88a80", // 匹配括号范围背景（集中、清晰、不刺眼）
+        "editorBracketMatch.background": "#218fb188", // 匹配括号范围背景（集中、清晰、不刺眼）
         "editorBracketMatch.border": "#00000000", // 匹配括号边框
         // ========================================
         // 内联提示（Inlay Hints）
