@@ -311,10 +311,10 @@
         // 增强括号匹配视觉提示
         // ========================================
         "editorBracketHighlight.foreground1": "#79c0ff", // 第一层括号颜色
-        "editorBracketHighlight.foreground2": "#56d364", // 第二层
-        "editorBracketHighlight.foreground3": "#e3b341", // 第三层
+        "editorBracketHighlight.foreground2": "#e9e930", // 第二层
+        "editorBracketHighlight.foreground3": "#ff9bce", // 第三层
         "editorBracketHighlight.foreground4": "#ffa198", // 第四层
-        "editorBracketHighlight.foreground5": "#ff9bce", // 第五层
+        "editorBracketHighlight.foreground5": "#d2a8ff", // 第五层
         "editorBracketHighlight.foreground6": "#d2a8ff", // 第六层
         "editorBracketHighlight.unexpectedBracket.foreground": "#7d8590", // 错配括号颜色
         // ========================================
@@ -399,14 +399,14 @@
             "name": "Number",
             "scope": "constant.numeric",
             "settings": {
-                "foreground": "#00CED1"
+                "foreground": "#16efff"
             }
         },
         {
             "name": "Built-in constant",
             "scope": "constant.language",
             "settings": {
-                "foreground": "#FF5555"
+                "foreground": "#6f6fff"
             }
         },
         {
