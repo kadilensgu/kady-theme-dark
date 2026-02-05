@@ -189,7 +189,7 @@
         "editor.wordHighlightBorder": "#00000000", // 单词高亮边框（无边框更高级）
         "editor.wordHighlightStrongBackground": "#ff9f4366", // 强语义高亮背景（蜜橙色，语义感更强）
         "editor.wordHighlightStrongBorder": "#00000000", // 强高亮边框
-        "editorBracketMatch.background": "#218fb188", // 匹配括号范围背景（集中、清晰、不刺眼）
+        "editorBracketMatch.background": "#218fb100", // 匹配括号范围背景（集中、清晰、不刺眼）
         "editorBracketMatch.border": "#00000000", // 匹配括号边框
         // ========================================
         // 内联提示（Inlay Hints）
