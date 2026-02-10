@@ -366,14 +366,16 @@
             "name": "Comment",
             "scope": "comment",
             "settings": {
-                "foreground": "#888888"
+                "foreground": "#888888",
+                "fontStyle": "strikethrough"
             }
         },
         {
             "name": "String",
             "scope": "string",
             "settings": {
-                "foreground": "#119651"
+                "foreground": "#119651",
+                "fontStyle": "italic"
             }
         },
         {
