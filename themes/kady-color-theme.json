@@ -367,7 +367,7 @@
             "scope": "comment",
             "settings": {
                 "foreground": "#888888",
-                "fontStyle": "underline"
+                "fontStyle": "strikethrough"
             }
         },
         {
@@ -429,15 +429,14 @@
             "name": "Keyword",
             "scope": "keyword",
             "settings": {
+                "foreground": "#ff5555",
                 "fontStyle": "italic",
-                "foreground": "#ff5555"
             }
         },
         {
             "name": "Storage",
             "scope": "storage",
             "settings": {
-                "fontStyle": "",
                 "foreground": "#ff5555"
             }
         },
