@@ -374,8 +374,7 @@
             "name": "String",
             "scope": "string",
             "settings": {
-                "foreground": "#119651",
-                "fontStyle": "italic"
+                "foreground": "#119651"
             }
         },
         {
