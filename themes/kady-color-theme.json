@@ -367,7 +367,7 @@
             "scope": "comment",
             "settings": {
                 "foreground": "#888888",
-                "fontStyle": "strikethrough"
+                "fontStyle": "underline"
             }
         },
         {
@@ -437,6 +437,7 @@
             "name": "Storage",
             "scope": "storage",
             "settings": {
+                "fontStyle": "italic",
                 "foreground": "#ff5555"
             }
         },
@@ -726,7 +727,8 @@
             "name": "this.self",
             "scope": "variable.language",
             "settings": {
-                "foreground": "#FD971F"
+                "foreground": "#FD971F",
+                "fontStyle": "italic"
             }
         },
         {
