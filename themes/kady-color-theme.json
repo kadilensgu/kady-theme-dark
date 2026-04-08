@@ -310,13 +310,13 @@
         // 括号配对高亮
         // 增强括号匹配视觉提示
         // ========================================
-        "editorBracketHighlight.foreground1": "#79c0ff", // 第一层括号颜色
+        "editorBracketHighlight.foreground1": "#46a9ff", // 第一层括号颜色
         "editorBracketHighlight.foreground2": "#e9e930", // 第二层
         "editorBracketHighlight.foreground3": "#ff9bce", // 第三层
         "editorBracketHighlight.foreground4": "#ffa198", // 第四层
         "editorBracketHighlight.foreground5": "#d2a8ff", // 第五层
         "editorBracketHighlight.foreground6": "#d2a8ff", // 第六层
-        "editorBracketHighlight.unexpectedBracket.foreground": "#7d8590", // 错配括号颜色
+        "editorBracketHighlight.unexpectedBracket.foreground": "#ff0000", // 错配括号颜色
         // ========================================
         // Git 版本控制装饰
         // 文件状态颜色标识
@@ -356,7 +356,7 @@
                 "meta.embedded",
                 "source.groovy.embedded",
                 "string meta.image.inline.markdown",
-                "variable.legacy.builtin.python"
+                "variable.legacy.builtin.python",
             ],
             "settings": {
                 "foreground": "#fafafa"
@@ -364,10 +364,14 @@
         },
         {
             "name": "Comment",
-            "scope": "comment",
+            "scope": [
+                "comment",
+                "storage.type.class.jsdoc",
+                "entity.name.type.instance.jsdoc",
+                "variable.other.jsdoc",
+            ],
             "settings": {
                 "foreground": "#888888",
-                "fontStyle": "strikethrough"
             }
         },
         {
@@ -437,6 +441,7 @@
             "name": "Storage",
             "scope": "storage",
             "settings": {
+                "fontStyle": "italic",
                 "foreground": "#ff5555"
             }
         },
@@ -726,7 +731,8 @@
             "name": "this.self",
             "scope": "variable.language",
             "settings": {
-                "foreground": "#FD971F"
+                "foreground": "#FD971F",
+                "fontStyle": "italic"
             }
         },
         {
